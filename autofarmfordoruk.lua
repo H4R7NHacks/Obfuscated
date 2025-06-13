@@ -27,6 +27,10 @@ if game.PlaceId == 15144787112 then
 				end
 			end
 		end
+	else
+		while wait(0.1) do
+			game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_net@0.1.0").net:FindFirstChild("RE/PlayerWantsRematch"):FireServer()
+		end
 	end
 
 
