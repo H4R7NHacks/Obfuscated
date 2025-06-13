@@ -7,11 +7,11 @@ if game.PlaceId == 15144787112 then
 
 	if game.Players.LocalPlayer.Name == "Slow_pq" or game.Players.LocalPlayer.Name == "Rising_An4el" then
 		while wait(0.1) do
-
-		local ball = game.Workspace.Balls:GetDescendants()
 			
 			game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_net@0.1.0").net:FindFirstChild("RE/PlayerWantsRematch"):FireServer()
-	
+
+			local ball = game.Workspace.Balls:GetDescendants()
+			
 			for i,v in pairs (ball) do
 				if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("BasePart") then
                     			if game.Workspace.Alive:FindFirstChild(game.Players.LocalPlayer.Name) then
