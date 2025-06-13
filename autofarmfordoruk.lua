@@ -3,12 +3,12 @@ if game.PlaceId == 15144787112 then
 
 
 	local vim = game:GetService("VirtualInputManager")
+	local cooldown = false
 
 	if game.Players.LocalPlayer.Name == "Slow_pq" or game.Players.LocalPlayer.Name == "Rising_An4el" then
 		while wait(0.1) do
 
 		local ball = game.Workspace.Balls:GetDescendants()
-		local cooldown = false
 			
 			game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_net@0.1.0").net:FindFirstChild("RE/PlayerWantsRematch"):FireServer()
 	
