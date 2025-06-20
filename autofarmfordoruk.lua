@@ -17,7 +17,7 @@ if game.PlaceId == 15144787112 then
                     			if game.Workspace.Alive:FindFirstChild(game.Players.LocalPlayer.Name) then
 						if cooldown == false then
 							cooldown = true
-							wait(2)
+							wait(1)
 							vim:SendKeyEvent(true, Enum.KeyCode.Q, false, game)
 							wait(0.05)
 							vim:SendKeyEvent(false, Enum.KeyCode.Q, false, game)
